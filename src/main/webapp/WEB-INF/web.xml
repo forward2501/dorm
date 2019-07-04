@@ -1,0 +1,137 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	
+	<filter>
+  	<filter-name>charsetEncodingFilter</filter-name>
+  	<filter-class>com.filter.CharsetEncodingFilter</filter-class>
+  	<init-param>
+  		<param-name>CharsetEncoding</param-name>
+  		<param-value>UTF-8</param-value>
+  	</init-param>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>charsetEncodingFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>  
+
+
+	<servlet>
+		<servlet-name>VerifyCodeServlet</servlet-name>
+		<servlet-class>com.servlets.VerifyCodeServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.servlets.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ApplyRepairServlet</servlet-name>
+		<servlet-class>com.servlets.ApplyRepairServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>MyRecordsServlet</servlet-name>
+		<servlet-class>com.servlets.MyRecordsServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>UserPwChangeServlet</servlet-name>
+		<servlet-class>com.servlets.UserPwChangeServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>LoginOutServlet</servlet-name>
+		<servlet-class>com.servlets.LoginOutServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>RecordIngServlet</servlet-name>
+		<servlet-class>com.servlets.RecordIngServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>RecordedServlet</servlet-name>
+		<servlet-class>com.servlets.RecordedServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>RegisterLateServlet</servlet-name>
+		<servlet-class>com.servlets.RegisterLateServlet</servlet-class>
+	</servlet>
+
+
+	<servlet>
+		<servlet-name>LateRecordsServlet</servlet-name>
+		<servlet-class>com.servlets.LateRecordsServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AddRepairedServlet</servlet-name>
+		<servlet-class>com.servlets.AddRepairedServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>VerifyCodeServlet</servlet-name>
+		<url-pattern>/verifyCodeServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/loginServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ApplyRepairServlet</servlet-name>
+		<url-pattern>/applyRepairServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>MyRecordsServlet</servlet-name>
+		<url-pattern>/myRecordsServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>UserPwChangeServlet</servlet-name>
+		<url-pattern>/userPwChangeServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>LoginOutServlet</servlet-name>
+		<url-pattern>/loginOutServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>RecordIngServlet</servlet-name>
+		<url-pattern>/recordingServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>RecordedServlet</servlet-name>
+		<url-pattern>/recordedServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>RegisterLateServlet</servlet-name>
+		<url-pattern>/registerLateServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>LateRecordsServlet</servlet-name>
+		<url-pattern>/lateRecordServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AddRepairedServlet</servlet-name>
+		<url-pattern>/addRepairedServlet</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
